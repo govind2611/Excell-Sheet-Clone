@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body {
+  width: 100vw;
+  background-color: #f1f3f4;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  overflow-x: auto;
+}
+
+th,
+td {
+  border: 1px solid #333;
+  width: 180px;
+}
+
+td:focus {
+  cursor:cell;
+}
+.first-nav {
+  background-color: #217346de;
+  height: 40px;
+  padding-top: 18px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin-left: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.home {
+  color: black;
+  background-color: #f1f3f4;
+  padding: 5px;
+}
+.second-nav {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.second-nav div {
+  margin-right: 50px;
+  display: flex;
+  gap: 10px;
+}
+
+.copy button {
+  border: none;
+}
+
+#font-family,
+#font-size {
+  padding: 3px;
+  border: none;
+  border-radius: 5px;
+}
+.format button {
+  border: none;
+}
+
+.color input {
+  display: none;
+}
+
+.align button {
+  border: none;
+}
+.third-nav {
+  margin-bottom: 20px;
+}
+
+#current-cell {
+  width: 30px;
+  margin-left: 15px;
+  margin-right: 10px;
+  font-size: 16px;
+  background-color: #fff;
+  padding: 4px 20px;
+  border-radius: 5px;
+}
+.third-nav label {
+  font-size: 18px;
+  margin-right: 5px;
+}
+#formula {
+  width: 90vw;
+  border: none;
+  outline: none;
+  height: 25px;
+  border-radius: 5px;
+}
+.empty-shell {
+  background-color: rgba(38, 31, 31, 0.596);
+}
+
+.copy, .format, .color, .align, .border-style, .down-upload{
+  cursor: pointer;
+}
+#jsonFile{
+  display: none;
+}
+.down-upload label, .color label{
+  cursor: pointer;
+}
+

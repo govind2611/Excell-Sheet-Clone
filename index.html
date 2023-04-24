@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excell Sheet</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <div class="first-nav">
+      <ul>
+        <li><a href="#">File</a></li>
+        <li><a class="home" href="#">Home</a></li>
+        <li><a href="#">Insert</a></li>
+        <li><a href="#">Layout</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </div>
+    <div class="second-nav">
+      <div class="copy">
+        <span class="material-icons" id="copy-btn">content_copy</span>
+        <span class="material-icons" id="cut-btn">content_cut</span>
+        <span class="material-icons" id="paste-btn">content_paste</span>
+      </div>
+
+      <div class="font">
+        <select id="font-family">
+          <option value="Arial">Arial</option>
+          <option value="Helvetica">Helvetica</option>
+          <option value="Verdana">Verdana</option>
+          <option value="Arial Black">Arial Black</option>
+          <option value="Calibri">Calibri</option>
+          <option value="Franklin Gothic Medium">Franklin Gothic Medium</option>
+          <option value="Times New Roman">Times New Roman</option>
+          <option value="Rockwell">Rockwell</option>
+          <option value="Courier">Courier</option>
+          <option value="Monaco">Monaco</option>
+          <option value="Comic Sans">Comic Sans</option>
+          <option value="Comic Sans MS">Comic Sans MS</option>
+          <option value="Brush Script MT">Brush Script MT</option>
+          <option value="Impact">Impact</option>
+          <option value="papyrus">papyrus</option>
+          <option value="Brush Script MT">Brush Script MT</option>
+          <option value="Comic Sans MS">Comic Sans MS</option>
+          <option value="Georgia Pro">Georgia Pro</option>
+          <option value="Ink Free">Ink Free</option>
+          <option value="Lucida Handwriting">Lucida Handwriting</option>
+          <option value="Marlett">Marlett</option>
+          <option value="serif">Serif</option>
+          <option value="sans-serif">Sans-serif</option>
+          <option value="monospace">Monospace</option>
+          <option value="cursive">Cursive</option>
+          <option value="fantasy">Fantasy</option>
+        </select>
+
+        <select id="font-size">
+          <option value="2px">2</option>
+          <option value="4px">4</option>
+          <option value="6px">6</option>
+          <option value="8px">8</option>
+          <option value="10px">10</option>
+          <option value="12px">12</option>
+          <option value="14px">14</option>
+          <option value="16px">16</option>
+          <option value="18px">18</option>
+          <option value="20px">20</option>
+          <option value="22px">22</option>
+          <option value="24px">24</option>
+          <option value="26px">26</option>
+        </select>
+      </div>
+
+      <div class="format">
+        <span class="material-icons" id="bold-btn">format_bold</span>
+        <span class="material-icons" id="italics-btn">format_italic</span>
+        <span class="material-icons" id="underline-btn">format_underlined</span>
+      </div>
+
+      <div class="color">
+        <label for="text-color"
+          ><i class="material-icons">format_color_text</i></label
+        >
+        <input type="color" id="text-color" />
+        <label for="bg-color"
+          ><i class="material-icons">format_color_fill</i></label
+        >
+        <input type="color" id="bg-color" />
+      </div>
+
+      <div class="align">
+        <span class="material-icons" id="left-align">format_align_left</span>
+        <span class="material-icons" id="center-align"
+          >format_align_center</span
+        >
+        <span class="material-icons" id="right-align">format_align_right</span>
+      </div>
+      
+      <div class="down-upload">
+        <span class="material-icons" id="download-btn" onclick="downloadJson()">download</span>
+        <label for="jsonFile"><i class="material-icons">upload</i></label>
+        <input type="file" id="jsonFile" accept=".json" />
+    
+      </div>
+
+      <div class="border-style">
+        <span class="material-icons" id="border-btm">border_bottom</span>
+        <span class="material-icons" id="border-top">border_top</span>
+        <span class="material-icons" id="border-left">border_left</span>
+        <span class="material-icons" id="border-right">border_right</span>
+        <span class="material-icons" id="border-outer">border_outer</span>
+      </div>
+      
+    </div>
+    <div class="third-nav">
+      
+      <h2 id="current-cell" style="display: inline">No Cell</h2>
+      <label for="formula">fx</label>
+      <input type="text" name="formula" id="formula" />
+    </div>
+   
+    <div class="table">
+      <table class="my-table">
+        <thead>
+          <tr id="table-heading-row">
+            <th class="empty-shell"></th>
+            <!-- this one is for black block -->
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+
+   
+
+    <script src="./script.js"></script>
+  </body>
+</html>
